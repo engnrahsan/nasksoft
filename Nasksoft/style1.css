@@ -1,0 +1,211 @@
+
+.contain {
+  margin: 96px auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.item1 {
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  position:relative;
+}
+.owl-nav button span{
+  display:none;
+}
+.mycarousel .owl-nav button{
+  background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%!important;
+    box-shadow: 0px 0px 10px cadetblue;
+}
+.mycarousel .owl-nav{
+  position: absolute;
+    top: -100px;
+    right:0;
+}
+.hmsec3content span{
+  background-color: #CDEEFF;
+    padding: 5px 19px;
+    border-radius: 15px;
+    /* color:#1E96D3; */
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    color: #00293E;
+    
+}
+.hmsec3content h3{
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  font-family: 'Quicksand';
+  margin-top: 20px;
+}
+.hmsec3content{
+  position:relative;
+}
+.hmsec3content .arrow1{
+    width: 26px;
+    position: absolute;
+    right: 122px;
+    top: 72%;
+}
+.hmsec3content .arrow2{
+    width: 26px;
+    position: absolute;
+    right: 27px;
+    top: 72%;
+}
+.myhoveritem{
+  clip-path: polygon(0 0, 75% 0%, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding:20px;
+  width:80%;
+  height:288px;
+  display:none;
+}
+.item1:hover .myhoveritem{
+  display:block;
+  animation: 2s myhoveritem1 linear;
+   
+}
+@keyframes myhoveritem1 {
+  0%{
+    opacity:0.4;
+  }
+  50%{
+    opacity:0.6;
+  }
+  75%{
+    opacity:0.8;
+  }
+  100%{
+    opacity:1
+  }
+}
+.item1:hover .myitem2{
+  display:block;
+  animation: 2s myitem2 linear;
+   
+}
+@keyframes myitem2 {
+  0%{
+    opacity:0.4;
+  }
+  50%{
+    opacity:0.6;
+  }
+  75%{
+    opacity:0.8;
+  }
+  100%{
+    opacity:1
+  }
+}
+
+.myhoveritem h4{
+color:#1E96D3;
+}
+.myhoveritem p{
+  color:black;
+  }
+.myitem{
+  position:absolute;
+  width: 242px;
+    height: 237px;
+    background: linear-gradient(262.31deg, #FFAE6D 19.69%, #FF836A 104.03%);
+    left: 0;
+    bottom:0;
+  clip-path: polygon(0 62%, 70% 63%, 100% 100%, 0% 100%);
+}
+.myitem h5{
+    position: absolute;
+    bottom: 11px;
+    left: 9px;
+}
+.myitem1{
+  position: absolute;
+  width: 242px;
+  height: 237px;
+  left: 109px;
+  bottom: 0;
+  clip-path: polygon(37% 79%, 73% 80%, 88% 100%, 54% 100%);
+  background: #00C9FC;
+}
+
+.myitem1 i{
+  right: 78px;
+  position: absolute;
+  bottom: 16px;
+}
+
+.myitem1 img{
+  width: 17%!important;
+  position: absolute;
+  bottom: 7px;
+  right: 67px;
+    
+}
+.myitem2{
+  position: absolute;
+  width: 242px;
+  height: 237px;
+  left: 109px;
+  bottom: 0;
+  top: 48px;
+  clip-path: polygon(37% 80%, 74% 80%, 90% 102%, 45% 100%);
+  background: #00C9FC;
+  display:none;
+}
+
+.myitem2 i{
+  right: 78px;
+  position: absolute;
+  bottom: 16px;
+}
+
+.myitem2 img{
+  width: 17%!important;
+  position: absolute;
+  bottom: 7px;
+  right: 67px; 
+}
+
+@media  screen and (max-width: 580px) {
+  .mycarousel .owl-nav button{
+    width: 50px;
+    height:50px;
+  }  
+  .hmsec3content .arrow2{
+    width: 31px;
+    right: 75px;
+    top: 16px;
+  }
+  .hmsec3content .arrow1{
+    width: 31px;
+    top:16px;
+  }
+  .hmsec3content{
+       margin-left: 20px;
+  }
+}
+
+@media  screen and (max-width: 415px) {
+.myitem2{
+  left: 150px;
+  top: 95px; 
+}
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: none !important;
+}
